@@ -5,6 +5,7 @@ $(document).ready(function() {
 
     // iterate over original list
     imdb_watchlist.each(function () {
+
         // extract imdb_id from href
         var href = $(this).attr('href');
         var imdb_id = href.split('/');
