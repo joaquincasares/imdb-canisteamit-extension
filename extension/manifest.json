@@ -1,0 +1,18 @@
+{
+  "name": "IMDB - CanISteamIt Extension",
+  "version": "0.1",
+  "manifest_version": 2,
+
+  "description": "Integrates CanIStreamIt results into IMDB watchlist page.",
+  "icons": { "16": "icon16.png",
+             "48": "icon48.png",
+             "128": "icon128.png" },
+
+  "background": "background.html",
+  "content_scripts": [
+    {
+      "matches": ["http://www.imdb.com/user/*/watchlist*"],
+      "js": ["jquery-1.9.1.min.js", "content.js"]
+    }
+  ]
+}
